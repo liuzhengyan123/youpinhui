@@ -7,11 +7,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="img/favicon.png" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/style.css">		
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css" />
 		<link rel="stylesheet" href="css/responsive.css">
-		<link rel="stylesheet" type="text/css" href="css/shop.css"/>
-		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/shop.css" />
+		<title>电商</title>
+
 	</head>
 
 	<body>
@@ -23,51 +24,14 @@
 						<div class="col-md-6 col-sm-6 col-xs-12">
 							<ul class="n-menu">
 								<li>
-									<a href="javascript:;"><i class="fa fa-user"></i>我的账户</a>
-									<ul class="d-down account">
-										<li class="first">
-											<a href="login.html">登录</a>
-										</li>
-										<li class="last">
-											<a href="javascript:;">退出</a>
-										</li>
-										<li>
-											<a href="javascript:;">简况</a>
-										</li>
-									</ul>
+									<a href="javascript:;">您好，欢迎来到优品汇！</a>
 								</li>
-								<li>
-									<a href="#"><i class="fa fa-usd"></i>货币</a>
-									<ul class="d-down currency">
-										<li>
-											<a href="javascript:;">欧元</a>
-										</li>
-										<li>
-											<a href="javascript:;">英镑</a>
-										</li>
-										<li>
-											<a href="javascript:;">第纳尔</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href="#" title=""><img src="img/China-Flag.png" alt="" />中文</a>
-									<ul class="d-down language">
-										<li>
-											<a href="javascript:;">英语</a>
-										</li>
-										<li>
-											<a href="javascript:;">法语</a>
-										</li>
-										<li>
-											<a href="javascript:;">日语</a>
-										</li>
-									</ul>
-								</li>
+							
 							</ul>
 						</div>
 						<div class="col-md-6 col-sm-6 col-xs-12 text-center">
 							<ul class="tp-right n-menu">
+								
 								<li class="first">
 									<a href="login.html"><i class="fa fa-sign-in"></i>登录</a>
 								</li>
@@ -90,12 +54,7 @@
 									<a href="index.html" title=""><img src="img/1.png" alt="" /></a>
 								</div>
 							</div>
-							<div class="col-md-6 col-lg-5 col-sm-4 hidden-xs">
-								<ul class="quick-prom">
-									<li><i class="fa fa-phone"></i> <span>咨询方式 : 088-55356789</span></li>
-									<li class="hidden-sm"><i class="fa fa-envelope-o"></i><span><a href="#">mail@example.com</a></span></li>
-								</ul>
-							</div>
+							
 							<div class="col-md-3 col-lg-4 col-sm-4 col-xs-12">
 								<div class="product-filter-form">
 									<form>
@@ -103,6 +62,15 @@
 										<button type="button" id="searchbtn"><i class="fa fa-search"></i></button>
 									</form>
 								</div>
+							</div>
+							<div class="col-md-6 col-lg-5 col-sm-4 hidden-xs">
+								<ul class="quick-prom">
+									<!--<li><i class="fa fa-phone"></i> <span>满149元/2件</span></li>-->
+									<li><img src="img/12.png"><span>满149元/2件</span></li>
+									<!--<li class="hidden-sm"><i class="fa fa-envelope-o"></i><span><a href="#">10天包退</a></span></li>-->
+									<li class="hidden-sm"><img src="img/13.png"/><span><a href="#">10天包退</a></span></li>
+									
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -119,7 +87,7 @@
 										<a href="index.html"> <i class="fa fa-home"></i>主页</a>
 									</li>
 									<li>
-										<a href="shoplist.html">热卖商品</a>
+										<a href="shoplist.html">全部商品分类</a>
 										<div class="mega-menu common-mega">
 											<div class="col-md-3 col-sm-3">
 												<div class="mega-menu-lists">
@@ -164,7 +132,7 @@
 
 									</li>
 									<li>
-										<a href="shoplist.html">购物街</a>
+										<a href="shoplist.html">热卖商品</a>
 										<ul class="ddown">
 											<li class="mega-menu-lists">
 												<a href="shoplist.html">牛仔裤</a>
@@ -181,12 +149,10 @@
 										</ul>
 									</li>
 									<li>
-										<a href="javascript:;">关于我们</a>
+										<a href="javascript:;">新品</a>
 									</li>
-									<li>
-										<a href="shoplist.html">热门商店</a>
-									</li>
-									<li>
+									
+									<!--<li>
 										<a href="connectus.html">联系我们</a>
 									</li>
 									<li>
@@ -247,7 +213,7 @@
 												<a target="_blank" href="javascript:;">联系邮箱</a>
 											</li>
 										</ul>
-									</li>
+									</li>-->
 								</ul>
 
 							</nav>
@@ -388,7 +354,7 @@
 										<a href="javascript:;">
 											<div class="wish-list-inner">
 												<div class="cart-icon">
-													<i class="fa fa-shopping-cart"> </i>
+													<i class="fa fa-shopping-cart" id="end"> </i>
 													<div class="cart-count text-center">
 														<strong>0</strong>
 													</div>
@@ -396,7 +362,9 @@
 											</div>
 										</a>
 										<div class="cart-sub">
-											<div class="all_carts_item"></div>
+											<div class="all_carts_item">
+
+											</div>
 											<div class="minicart_total_checkout">
 												合计<span><span class="amount">$13.00</span></span>
 											</div>
@@ -414,112 +382,310 @@
 			</div>
 		</header>
 		<!--页眉结束-->
+		<section class="shop-sidebar">
+			<div class="container">
+				<div class="row">
+					<!-- <div class="col-md-3 col-sm-4 col-xs-12">
+						<div class="total_widget ">
+							<aside class="aside_widget widget-categories">
+								<h3 class="sidebar_title">分类</h3>
+								<ul class="sidebar_menu">
+									<li>
+										<i class="glyphicon glyphicon-triangle-right"></i>
+										<a href="#">衣服</a>
+										<span class="count">( 1 )</span>
+									</li>
+									<li>
+										<i class="glyphicon glyphicon-triangle-right"></i>
+										<a href="#">衣服</a>
+										<span class="count">( 1 )</span>
+									</li>
+									<li>
+										<i class="glyphicon glyphicon-triangle-right"></i>
+										<a href="#">衣服</a>
+										<span class="count">( 1 )</span>
+									</li>
+									<li>
+										<i class="glyphicon glyphicon-triangle-right"></i>
+										<a href="#">衣服</a>
+										<span class="count">( 1 )</span>
+									</li>
+								</ul>
+							</aside>
+							<aside class="aside_widget shop-filter">
+								<h3 class="sidebar_title">价格筛选</h3>
+								<div class="info_widget">
+									<div class="price_filter">
+										<div class="slider-range">
+											<div id="range" class="ui-slider-range ui-widget-header ui-corner-all"></div>
+											<span id="handle_right" class="ui-slider-handle ui-state-default ui-corner-all"></span>
+											<span id="handle_left" class="ui-slider-handle ui-state-default ui-corner-all"></span>
+										</div>
+										<div class="price_slider_amount">
+											<span class="btn">过滤</span>
+											<input id="p_text" type="text" placeholder="add your price" />
+										</div>
+									</div>
+								</div>
+							</aside>
+							<aside class="aside_widget aside-brand">
+								<h3 class="sidebar_title">产品品牌</h3>
+								<ul class="sidebar_menu">
+									<li>
+										<i class="glyphicon glyphicon-triangle-right"></i>
+										<a href="#">亚拖累</a>
+										<span class="count">( 1 )</span>
+									</li>
+									<li>
+										<i class="glyphicon glyphicon-triangle-right"></i>
+										<a href="#">亚拖累</a>
+										<span class="count">( 1 )</span>
+									</li>
+									<li>
+										<i class="glyphicon glyphicon-triangle-right"></i>
+										<a href="#">亚拖累</a>
+										<span class="count">( 1 )</span>
+									</li>
+									<li>
+										<i class="glyphicon glyphicon-triangle-right"></i>
+										<a href="#">亚拖累</a>
+										<span class="count">( 1 )</span>
+									</li>
+								</ul>
+							</aside>
+							<aside class="aside_widget aside-best-sell content">
+								<h3 class="sidebar_title">最畅销</h3>
+								<div class="col best_sell">
+									<div class="sp_img">
+										<a href="details.html?goodId=245154">
+											<img src="http://imgs-qn.iliangcang.com/ware/goods/big/2/245/245154.jpg?t=1479892935">
+										</a>
 
-		<section class="theme">
+										<div class="sp_btn">
+											<span class="collection btn" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="收藏" data-original-title="" title="">
+									<i class="glyphicon glyphicon-heart"></i>
+								</span>
+											<span class="addCart btn" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="添加到购物车" data-original-title="" title="">
+									<i class="glyphicon glyphicon-shopping-cart"></i>
+								</span>
+											<span class="qSearch btn" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="快速浏览" data-original-title="" title="">
+									<i class="glyphicon glyphicon-search"></i>
+								</span>
+										</div>
+									</div>
+									<div class="sp_info">
+										<a href="details.html?goodId=245154">
+											<p class="sp_title">轻型款鸵鸟枕【酒红色】</p>
+										</a>
 
-			<div class="breadcumb-area">
-				<div class="bread_main">
-					<div class="bread_hading text-center">
-						<h1>购物车</h1>
+										<p class="price">
+											<span class="persale">10%</span>
+											<span class="new_price">$ 299.00</span>
+											<span class="old_price">$345</span>
+										</p>
+									</div>
+								</div>
+							</aside>
+							<aside class="aside_widget aside-hot-sell">
+								<h3 class="sidebar_title">热买</h3>
+							</aside>
+							<aside class="aside_widget product-tag">
+								<h3 class="sidebar_title">热门标签</h3>
+								<ul class="clearfix">
+									<li><a href="#" class="btn">最佳</a></li>
+									<li><a href="#" class="btn">时尚</a></li>
+									<li><a href="#" class="btn">妇女</a></li>
+									<li><a href="#" class="btn">男人</a></li>
+									<li><a href="#" class="btn">画廊</a></li>
+									<li><a href="#" class="btn">最新</a></li>
+									<li><a href="#" class="btn">收藏男人</a></li>
+									<li><a href="#" class="btn">顶级销售</a></li>
+									<li><a href="#" class="btn">时尚</a></li>
+									<li><a href="#" class="btn">更好</a></li>
+									<li><a href="#" class="btn">布</a></li>
+								</ul>
+							</aside>
+						</div>
+					</div> -->
+					<div class="col-md-12 col-sm-8 col-xs-12 content">
+						<div class="shop-list-grid-area">
+							<div class="product-filter">
+								<div class="row">
+									<div class="col-md-7 col-sm-7 col-xs-12">
+										<div class="sort">
+											<label class="hidden-xs">排序方式：</label>
+											<select id="input-sort">
+												<option value="">默认</option>
+												<option value="">价格(低>高)</option>
+												<option value="">价格(高>低)</option>
+												
+											</select>
+										</div>
+										<div class="compare-total hidden-md hidden-sm hidden-xs">
+											<a href="#" class="btn">
+												产品比较
+											</a>
+										</div>
+									</div>
+									<div class="col-md-5 col-sm-5 col-xs-12">
+										<div class="show-mode-right">
+											<div class="show_mode">
+												<ul class="tab_button">
+													<li class="active">
+														<a data-toggle="tab" title="格" href="#grid" aria-expanded="true"><i class="fa fa-th"></i></a>
+													</li>
+													<li>
+														<a data-toggle="tab" title="名单" href="#list" aria-expanded="false"><i class="fa fa-th-list"></i></a>
+													</li>
+												</ul>
+											</div>
+
+											<div class="limit  hidden-sm ">
+												<label class=" hidden-xs">显示：</label>
+												<select id="input-limit">
+													<option value="">9</option>
+													<option value="">12</option>
+													<option value="">25</option>
+													
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="shop-product-area">
+							<div class="tab-content">
+								<!--grid-->
+								<div role="tabpanel" class="tab-pane fade active in tab-grid" id="grid">
+									<div class="row">
+										<div class="grid">
+
+										</div>
+									</div>
+
+									<!-- 分页页码区 -->
+									<nav aria-label="Page navigation" class="page-nav">
+										<div class="page-area">
+											<div class="page-wrap hidden-xs">
+												<ul class="pagination pagination-lg grid-page">
+
+													<!-- <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li> -->
+
+												</ul>
+
+											</div>
+
+										</div>
+
+										<div class="change-pager">
+											<span class="previous grid-prev"><a href="#grid">&larr;</a></span>
+											<span class="next grid-next"><a href="#grid">&rarr;</a></span>
+										</div>
+									</nav>
+
+									<!-- 分页结束 -->
+								</div>
+								<!--list-->
+								<div role="tabpanel" class="tab-pane fade tab-grid" id="list">
+									<div class="row">
+										<div class="list list-view">
+											<!--<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+												<div class="item-product item-product-list">
+													<div class="item-product-thumb">
+														<a href="#">
+															<img src="img/07.jpg" />
+														</a>
+													</div>
+													<div class="item-product-info2">
+														<h3><a href="#">Chemise SLimFon</a></h3>
+														<div class="ratting-review">
+															<div class="info-rating">
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+															</div>
+															<div class="order-number">
+																<span>（5颗星）</span>
+															</div>
+															<div class="review-add">
+																<a href="#">
+																	添加您的评论
+																</a>
+															</div>
+														</div>
+														<div class="info-product-price">
+															<label class="persale">10％</label>
+															<span>$ 45.99</span>
+															<del>$ 69.71</del>
+														</div>
+														<div class="list-item-des">
+															<span>eqrwt</span>
+														</div>
+														<div class="product-extra-link">
+															<span class="collection btn" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="收藏">
+																<i class="glyphicon glyphicon-heart"></i>
+															</span>
+															<span class="addCart btn" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="添加到购物车">
+																<i class="glyphicon glyphicon-shopping-cart"></i>
+															</span>
+															<span class="qSearch btn" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="快速浏览">
+																<i class="glyphicon glyphicon-search"></i>
+															</span>
+														</div>
+														<div class="item-bought">
+															<span class="btn">11买了</span>
+														</div>
+													</div>
+												</div>
+											</div>-->
+										</div>
+									</div>
+
+									<!-- 分页页码区 -->
+									<nav aria-label="Page navigation" class="page-nav">
+										<div class="page-area">
+											<div class="page-wrap hidden-xs">
+												<ul class="pagination pagination-lg list-page">
+
+													<!-- <li><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li> -->
+
+												</ul>
+
+											</div>
+
+										</div>
+
+										<div class="change-pager">
+											<span class="previous list-prev"><a href="#list"> &larr;</a></span>
+											<span class="next list-next"><a href="#list"> &rarr;</a></span>
+										</div>
+									</nav>
+
+									<!-- 分页结束 -->
+
+								</div>
+							</div>
+						</div>
+
 					</div>
-					<ol class="breadcrumb">
-						<li class="home">
-							<a href="index.html" title="go to home">home</a>
-						</li>
-						<li class="cart">
-							<a href="javacript:;">cart</a>
-						</li>
-						
-					</ol>
 				</div>
 			</div>
 		</section>
 
-		<div class="cart-area pt55 pb55 ">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 col-sm-12 col-xs-12">
-						<form >
-							<div class="table">
-								<table class="shop_table cart table">
-									<thead>
-										<tr>
-											<th class="product-choice"><input type="checkbox"  id="all_check" value="全选" />全选</th>													
-											<th class="product-thumbnail">商品图片</th>
-											<th class="product-name">商品详情</th>
-											<th class="product-price">商品价格</th>
-											<th class="product-quantity">商品数量</th>
-											<th class="product-subtotal">商品总价</th>
-											<th class="product-remove">删除</th>
-										</tr>
-									</thead>
-									<tbody>
-										
-										<tr class="cart_item">
-											<td class="cart-action" colspan="7">
-												<div class="coupne-area">
-													<div class="input-box coupon-box">
-														<input type="text" name="name" placeholder="Coupne Code" class="apply-coupne">
-													</div>
-													<div class="input-box">
-														<input type="button" class="in-btn" name="apply" value="申请优惠券">
-													</div>
-												</div>
-												<div class="update-cart">
-
-													<div class="input-box">
-														<a href="cart.html">
-															<input type="button" class="in-btn" name="update-cart" value="更新购物车">
-														</a>
-														
-													</div>
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</form>
-						<div class="total-cart-wrap pt30">
-							<div class="section-title text-center pt40">
-								<h3>购物车总计</h3>
-							</div>
-							<form >
-								<div class="table-responsive">
-									<table class="cart-total-area table">
-										<tbody>
-											<tr class="cart_item">
-												<td class="ctg-type">商品小计</td>
-												<td class="cgt-des"> $ 0.00 </td>
-											</tr>
-											<tr class="cart_item">
-												<td class="ctg-type"> 运送方式</td>
-												<td class="cgt-des">免运费 <!--<span><a href="#">计算运费</a></span>--> </td>
-											</tr>
-											<tr class="cart_item">
-												<td class="ctg-type">总金额</td>
-												<td class="cgt-des total"> $0.00</td>
-											</tr>
-										</tbody>
-									</table>
-									<div class="input-box tci-box text-center">
-										<a href="payment.html">
-											<input type="button" class="in-btn place-order" value="提交订单">
-										</a>
-										
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		
-		<div class="section-info pt55 pb55">
+		<!--页脚开始-->
+		<!-- <div class="section-info pt55 pb55">
 			<div class="parallax-bg">
-			
+
 				<div class="section-content">
 					<div class="container">
 						<div class="row">
@@ -545,13 +711,11 @@
 						</div>
 					</div>
 				</div>
-				
-			</div>
-		</div>
-		
 
-		
-		<div class="our_clients_area pt55 pb55">
+			</div>
+		</div> -->
+
+		<!-- <div class="our_clients_area pt55 pb55">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 col-sm-12">
@@ -600,10 +764,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		
+		</div> -->
 
-		
 		<footer>
 			<div class="footer-widgets-area pt55">
 				<section class="block">
@@ -646,7 +808,7 @@
 													</li>
 												</ul>
 											</div>
-											
+
 										</div>
 										<div class="col-md-3 hidden-sm col-xs-12">
 											<div class="widget customer-services">
@@ -666,7 +828,7 @@
 													</li>
 												</ul>
 											</div>
-											
+
 										</div>
 										<div class="col-md-3 col-sm-4 col-xs-12">
 											<div class="widget news-letter">
@@ -694,7 +856,7 @@
 													</li>
 												</ul>
 											</div>
-											
+
 										</div>
 									</div>
 								</div>
@@ -703,7 +865,7 @@
 					</div>
 				</section>
 			</div>
-			
+
 			<div class="bottom-line">
 				<div class="container">
 					<div class="row">
@@ -724,22 +886,26 @@
 				</div>
 			</div>
 		</footer>
-		
-		
-	</body>
-		<script src="js/jquery-1.12.3.min.js" ></script>	
+
+		<script src="js/jquery-1.12.3.min.js" type="text/javascript" charset="utf-8"></script>
+
 		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/fly.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/jquery.meanmenu.js"></script>
 		<script src="js/jquery-ui.min.js"></script>
-		<script src="js/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/wow.min.js"></script>
 		<script src="js/jquery.nivo.slider.pack.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fly.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/shoplist.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/sousuo.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/addcart.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+		
+
+	</body>
 
 </html>

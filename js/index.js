@@ -1,18 +1,27 @@
 var token = localStorage.getItem('token') ? localStorage.getItem('token') : sessionStorage.getItem('token');
 $(function() {
 	addTopCart();
-	//获取广告
+	//获取广告   轮播图
+//	$.ajax({
+//		"url": "http://h6.duchengjiu.top/shop/api_ad.php",
+//		"type": "GET",
+//		"data": {
+//			"position_id": 1
+//		},
+//		"success": function(response) {
+//
+//			adInsert($("[role=listbox]"), response, $(".carousel-indicators"));
+//		}
+//	});
 	$.ajax({
-		"url": "http://h6.duchengjiu.top/shop/api_ad.php",
-		"type": "GET",
-		"data": {
-			"position_id": 1
-		},
-		"success": function(response) {
-
-			adInsert($("[role=listbox]"), response, $(".carousel-indicators"));
+		"url": "../other/img.json",
+		"type":"GET",
+		"success":function(response){
+			console.log(response);
+//			adInsert($("[role=listbox]"), response, $(".carousel-indicators"));
 		}
-	});
+	})
+	
 	//商品分类
 	$.ajax({
 		"url": "http://h6.duchengjiu.top/shop/api_cat.php",
@@ -48,6 +57,7 @@ $(function() {
 
 });
 
+//动态加载轮播图数据
 function adInsert(element, response, spot) {
 	var obj = response.data;
 	var html = '';
